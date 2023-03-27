@@ -1,28 +1,13 @@
 .container {
-    max-width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+    padding: 0 36px;
+    max-width: 1440px;
 
-    @media (max-width: $tablet-width) {
-        max-width: 964px;
-        padding-right: 10px;
-        padding-left: 10px;
-    } 
+    @media (min-width: $desktop-width) {
+        padding: 0 195px;
+    }
 }
 
+  
 
 
-
-.containernew {
-    max-width: 1200px;
-    margin-right: 375;
-    margin-left: 375;
-    padding: 0;
-
-    @media (max-width: $tablet-width) {
-        max-width: 964px;
-    } 
-
-}

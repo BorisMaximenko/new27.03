@@ -1,0 +1,109 @@
+.header {
+    background-image: url(/src/img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $lightest;
+
+    &__wrapper {
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        @media (min-width: $desktop-width) {
+           row-gap: 90px;
+           padding-bottom: 70px;
+
+        }
+    
+      
+    }
+
+    &__content{
+        margin: 0 auto;
+        max-width: 699px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    &__title,
+    &__text {
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__title {
+        max-width: 695px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 57px;
+
+        @media (min-width: $desktop-width) {
+            font-size: 58px;
+            line-height: 80px;
+            font-weight: 800;
+        }
+    }
+
+    &__text {
+        max-width: 539px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+       
+
+        @media (min-width: $desktop-width) {
+            flex-direction: row;
+            column-gap: 18px;
+            justify-content: center;
+        }
+    
+    }
+
+   
+
+
+
+}
+
+.button {
+
+    border: none;
+    background-color: $primary;
+    color: $lightest;
+    padding: 10px 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 157%;
+
+    @media (min-width: $desktop-width) {
+        padding: 15px 36px;
+
+    }
+
+
+    &--rounded {
+        border-radius: 37px; 
+    }
+
+    &--outline {
+        background-color: transparent;
+        border: 1px solid $lightest;
+    }
+
+}
